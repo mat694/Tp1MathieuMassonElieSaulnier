@@ -33,11 +33,8 @@ import android.widget.Toast;
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-
 			View rootView   = inflater.inflate(
-					R.layout.fragment_arename, container, false);
-			Toast t = Toast.makeText(getActivity(), "Rename", Toast.LENGTH_SHORT);
-			t.show();
+					R.layout.fragment_arename, container, false);		
 			return rootView;
 		}
 	}
