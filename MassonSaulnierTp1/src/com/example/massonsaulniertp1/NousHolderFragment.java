@@ -40,6 +40,7 @@ public class NousHolderFragment extends Fragment {
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_nous, container,
 				false);
+		
 		setWidget(rootView);
 		setListner();
 		return rootView;
