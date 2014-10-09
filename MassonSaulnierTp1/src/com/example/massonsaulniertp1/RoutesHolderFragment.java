@@ -1,10 +1,14 @@
 package com.example.massonsaulniertp1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class RoutesHolderFragment extends Fragment {
@@ -12,6 +16,9 @@ public class RoutesHolderFragment extends Fragment {
 	 * The fragment argument representing the section number for this
 	 * fragment.
 	 */
+	
+
+	
 	private static final String ARG_SECTION_NUMBER = "section_number";
 
 	/**
@@ -26,18 +33,18 @@ public class RoutesHolderFragment extends Fragment {
 		return fragment;
 	}
 
-	public RoutesHolderFragment() {
 
-	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		View rootView =   inflater.inflate(
+		View	rootView =   inflater.inflate(
 				R.layout.fragment_route, container, false);
-		Toast t = Toast.makeText(getActivity(), "Tarrif", Toast.LENGTH_SHORT);
-		t.show();
+	
 		return rootView;
 	}
+
+	
+	
 }

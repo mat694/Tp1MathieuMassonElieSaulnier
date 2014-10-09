@@ -8,10 +8,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.massonsaulniertp1.MainActivity$PlaceholderFragment" >
 
-    <TextView
-        android:id="@+id/section_label"
+    <Button
+        android:id="@+id/btnNumeroLigne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tarrif" />
+        android:layout_alignLeft="@+id/editTextNumeroLigne"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp"
+        android:text="Button" />
+
+    <EditText
+        android:id="@+id/editTextNumeroLigne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="44dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="54dp"
+        android:text="@string/numeroLigne" />
 		
 </RelativeLayout>
