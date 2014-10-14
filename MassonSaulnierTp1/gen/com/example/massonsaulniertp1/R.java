@@ -1225,8 +1225,9 @@ containing a value of this type.
         public static final int frequencies=0x7f050004;
         public static final int routes=0x7f050005;
         public static final int shapes=0x7f050006;
-        public static final int stops=0x7f050007;
-        public static final int trips=0x7f050008;
+        public static final int stop_times1=0x7f050007;
+        public static final int stops=0x7f050008;
+        public static final int trips=0x7f050009;
     }
     public static final class string {
         public static final int La_societe=0x7f0b0015;

@@ -350,8 +350,9 @@ int raw fare_rules 0x7f050003
 int raw frequencies 0x7f050004
 int raw routes 0x7f050005
 int raw shapes 0x7f050006
-int raw stops 0x7f050007
-int raw trips 0x7f050008
+int raw stop_times1 0x7f050007
+int raw stops 0x7f050008
+int raw trips 0x7f050009
 int string La_societe 0x7f0b0015
 int string abc_action_bar_home_description 0x7f0b0001
 int string abc_action_bar_up_description 0x7f0b0002
