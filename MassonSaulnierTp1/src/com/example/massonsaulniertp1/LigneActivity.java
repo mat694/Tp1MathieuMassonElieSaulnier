@@ -2,8 +2,11 @@ package com.example.massonsaulniertp1;
 
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 
+import parser.Fare;
 import parser.Routes;
+import parser.Stop;
 import parser.StopTimes;
 import parser.Trips;
 import parser.mainParser;
@@ -13,12 +16,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class LigneActivity extends ActionBarActivity {
 
 	ListView listeArret;
 	String numeroLigne;
-
+	double prix;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -27,7 +31,6 @@ public class LigneActivity extends ActionBarActivity {
 		numeroLigne = bundle.getString("NumeroLigne");
 		setWidget();
 		populateListeArret();
-
 	}
 
 	private void setWidget() {
@@ -36,48 +39,103 @@ public class LigneActivity extends ActionBarActivity {
 	}
 
 	private void populateListeArret() {
-		ArrayList<Routes> routes = trouverRoute();
 		ArrayList<Trips> trip = trouverTrips();
 		ArrayList<StopTimes> stopTime;
-		String idRoute = "";
-		// trouve le id de la route
-		for (Routes rout : routes) {
-			if (rout.route_short_name.equals(numeroLigne))
-				idRoute = rout.route_id;
-		}
-
 		ArrayList<String> ListeDeTripID = new ArrayList<String>();
-		// trouve le id du trip;
-		for (Trips t : trip) {
-			if (t.route_id.equals(idRoute))
-				ListeDeTripID.add(t.trip_id);
-		}
-		routes = null;
-		trip = null;
-		ArrayList<String> listeDeStopId = new ArrayList<String>();
-		stopTime = trouverStopTimes();
-		for (StopTimes stopT : stopTime) {
-			for (String tripID : ListeDeTripID) {
-				if (tripID.equals(stopT.trip_id))
-					listeDeStopId.add(stopT.stop_id);
+		ArrayList<Stop> ListStop = new ArrayList<Stop>();
+		 prix = trouverFare();
 
+		ListeDeTripID =trouverListTripID(trip);
+		trip = null;
+
+		
+		stopTime = trouverStopTimes();
+		ArrayList<StopTimes> listeDeStop = trouverListStopAvecID(stopTime,ListeDeTripID);
+
+		stopTime = null;
+		ArrayList<String> listDArret = new ArrayList<String>();
+		ListStop = trouverStop();
+
+		listDArret = trouverStopNom(ListStop,listeDeStop);
+		Collections.sort(listDArret);
+		listDArret = retirerVirgule(listDArret);
+		setAdapter(listDArret);
+	}
+	
+	private ArrayList<String> trouverStopNom(ArrayList<Stop> ListStop, ArrayList<StopTimes> ListeDeStop)
+	{
+		ArrayList<String> listDArret = new ArrayList<String>();
+		for (Stop stop : ListStop) {
+			for (StopTimes stopID : ListeDeStop) {
+
+				if (stopID.stop_id.equals(stop.stop_id))
+					if (Integer.parseInt(stopID.stop_sequence) < 10)
+						listDArret.add("0" + stopID.stop_sequence + ", "
+								+ stop.stop_name + " : " + prix + "$");
+					else
+						listDArret.add(stopID.stop_sequence + ", "
+								+ stop.stop_name + " : " + prix + "$");
 			}
 		}
-
-		ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, listeDeStopId);
-		listeArret.setAdapter(arrayAdapter);
+		return listDArret;
 	}
 
-	private ArrayList<Routes> trouverRoute() {
-		InputStreamReader resourceDeRoute = new InputStreamReader(this
-				.getResources().openRawResource(R.raw.routes));
-		return mainParser.parseRoutes(resourceDeRoute);
+	private ArrayList<StopTimes> trouverListStopAvecID(ArrayList<StopTimes> stopTime,ArrayList<String> ListeDeTripID){
+		ArrayList<StopTimes>  listeDeStop = new ArrayList<StopTimes>();
+		for (StopTimes stopT : stopTime) {
+			for (String tripID : ListeDeTripID) {
+
+				if (tripID.equals(stopT.trip_id))
+					listeDeStop.add(stopT);
+			}
+		}
+		return listeDeStop;
+		
+	}
+	
+	private ArrayList<String> trouverListTripID(ArrayList<Trips> listTrip){
+		ArrayList<String>  ListeDeTripID = new ArrayList<String>();
+		for (Trips t : listTrip) {
+			if (t.route_id.equals(numeroLigne))
+				ListeDeTripID.add(t.trip_id);
+			if (ListeDeTripID.size() >= 1)
+				break;
+		}
+		return ListeDeTripID;
+		
+	}
+	private ArrayList<String> retirerVirgule(ArrayList<String> listeDeString) {
+		String[] temp;
+		for (int i = 0; i < listeDeString.size(); i++) {
+			temp = listeDeString.get(i).split(",");
+			listeDeString.set(i, temp[1]);
+		}
+		return listeDeString;
+	}
+
+	private void setAdapter(ArrayList<String> listeDeString) {
+		ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+				android.R.layout.simple_list_item_1, listeDeString);
+		listeArret.setAdapter(arrayAdapter);
+
+	}
+
+	private double trouverFare() {
+		InputStreamReader resourceDeFare = new InputStreamReader(this
+				.getResources().openRawResource(R.raw.fare_attributes));
+		return mainParser.parseFare(Integer.parseInt(numeroLigne),
+				resourceDeFare);
+	}
+
+	private ArrayList<Stop> trouverStop() {
+		InputStreamReader resourceDeStop = new InputStreamReader(this
+				.getResources().openRawResource(R.raw.stops));
+		return mainParser.parseStop(resourceDeStop);
 	}
 
 	private ArrayList<StopTimes> trouverStopTimes() {
 		InputStreamReader resourceDeStopTimes = new InputStreamReader(this
-				.getResources().openRawResource(R.raw.stop_times1));
+				.getResources().openRawResource(R.raw.stop_times));
 		return mainParser.parseStopTime(resourceDeStopTimes);
 	}
 

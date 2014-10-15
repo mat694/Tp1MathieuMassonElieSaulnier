@@ -12,28 +12,30 @@
         android:id="@+id/btnNumeroLigne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextNumeroLigne"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="64dp"
-        android:text="Button" />
+        android:text="@string/BtnTarif" />
 
     <EditText
         android:id="@+id/editTextNumeroLigne"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="44dp"
-        android:ems="10" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/editTextNumeroLigne"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="53dp"
         android:text="@string/numeroLigne" />
 		
 </RelativeLayout>

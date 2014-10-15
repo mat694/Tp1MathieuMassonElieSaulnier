@@ -134,17 +134,15 @@ public class MainActivity extends ActionBarActivity implements
 				frag = MainFragment.newInstance(position + 1);
 				break;
 			case (1):
-				frag = NousHolderFragment.newInstance(position + 1);
+				frag = NousFragment.newInstance(position + 1);
 				break;
 			case (2):
-				frag = RoutesHolderFragment.newInstance(position + 1);
+				frag = RoutesFragment.newInstance(position + 1);
 				break;
 			case (3):
-				frag = TarifHolderFragment.newInstance(position + 1);
+				frag = TarifFragment.newInstance(position + 1);
 				break;
-			case (4):
-				frag = ARenameHolderFragment.newInstance(position + 1);
-				break;
+		
 
 			}
 			return frag;
@@ -154,7 +152,7 @@ public class MainActivity extends ActionBarActivity implements
 		@Override
 		public int getCount() {
 			// Show 3 total pages.
-			return 5;
+			return 4;
 		}
 
 		@Override
@@ -169,8 +167,7 @@ public class MainActivity extends ActionBarActivity implements
 				return getString(R.string.title_activity_Route).toUpperCase(l);
 			case 3:
 				return getString(R.string.title_activity_tarifs).toUpperCase(l);
-			case 4:
-				return getString(R.string.title_activity_arename).toUpperCase(l);
+
 			}
 			return null;
 		}

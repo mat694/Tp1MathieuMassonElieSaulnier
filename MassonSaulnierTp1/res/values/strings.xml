@@ -19,5 +19,7 @@
     <string name="title_section3">Section 3</string>
     <string name="numeroLigne">numero de ligne</string>
     <string name="title_activity_ligne">LigneActivity</string>
-
+	<string name="BtnTarif">Aller voir le tarif de la ligne que vous avez choisit dans le edit text plus haut</string>
+	<string name="Erreure">ERREURE</string>
+	<color name="black"> #000000</color>
 </resources>
