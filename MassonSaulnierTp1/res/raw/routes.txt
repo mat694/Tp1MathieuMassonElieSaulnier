@@ -1,0 +1,6 @@
+﻿route_id,agency_id,route_short_name,route_long_name,route_type,route_url,route_color,route_text_color
+11,STM,11,Montagne,3,http://www.stm.info/fr/infos/reseaux/bus,,
+12,STM,12,Île-des-Soeurs,3,http://www.stm.info/fr/infos/reseaux/bus,,
+13,STM,13,Christophe-Colomb,3,http://www.stm.info/fr/infos/reseaux/bus,,
+14,STM,14,Amherst,3,http://www.stm.info/fr/infos/reseaux/bus,,
+15,STM,15,Sainte-Catherine,3,http://www.stm.info/fr/infos/reseaux/bus,,
