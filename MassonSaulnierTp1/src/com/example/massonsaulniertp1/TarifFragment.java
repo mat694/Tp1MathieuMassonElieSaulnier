@@ -33,6 +33,10 @@ public class TarifFragment extends Fragment {
 		return fragment;
 	}
 
+	public TarifFragment() {
+
+	}
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -63,7 +67,7 @@ public class TarifFragment extends Fragment {
 						Intent intent = new Intent(rootView.getContext(),
 								LigneActivity.class);
 						intent.putExtra("NumeroLigne", ligne.getText()
-								.toString().trim());
+								.toString());
 						startActivity(intent);
 
 					}

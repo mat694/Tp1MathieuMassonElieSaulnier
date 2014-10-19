@@ -16,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class listviewAdapter extends BaseAdapter
@@ -66,8 +67,8 @@ public class listviewAdapter extends BaseAdapter
                     convertView = inflater.inflate(R.layout.listview_row, null);
                     holder = new ViewHolder();
                     holder.NumeroLigne = (TextView) convertView.findViewById(R.id.NumeroLigne);
-                    holder.PremierDirection = (TextView) convertView.findViewById(R.id.PremierDirection);
-                    holder.DeuxiemeDirection = (TextView) convertView.findViewById(R.id.DeuxiemeDirection);
+                    holder.PremierDirection = (Button) convertView.findViewById(R.id.PremierDirection);
+                    holder.DeuxiemeDirection = (Button) convertView.findViewById(R.id.DeuxiemeDirection);
            
                     convertView.setTag(holder);
                 }

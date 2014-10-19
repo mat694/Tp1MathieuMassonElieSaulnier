@@ -26,6 +26,8 @@ public class StopTimes {
 		this.stop_sequence = temp[4];
 
 	}
+	
+
 	public static ArrayList<StopTimes> trouverStopTimes(Resources r) {
 		InputStreamReader resourceDeStopTimes = new InputStreamReader(r.openRawResource(R.raw.stop_times));
 		return mainParser.parseStopTime(resourceDeStopTimes);

@@ -36,6 +36,7 @@ public class LigneActivity extends ActionBarActivity {
 
 	private void setWidget() {
 		listeArret = (ListView) findViewById(R.id.ListeLigne);
+
 	}
 
 	private void populateListeArret() {

@@ -27,6 +27,7 @@ public class Stop {
 		this.stop_url = temp[4];
 		this.wheelchair_accessible = temp[5];
 	}
+	
 
 	public static ArrayList<Stop> trouverStop(Resources r) {
 		InputStreamReader resourceDeStop = new InputStreamReader(r.openRawResource(R.raw.stops));

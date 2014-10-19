@@ -359,8 +359,12 @@ int raw stop_times 0x7f050007
 int raw stops 0x7f050008
 int raw trips 0x7f050009
 int string BtnTarif 0x7f0b001f
-int string Erreure 0x7f0b0020
+int string Erreure 0x7f0b0024
+int string Est 0x7f0b0022
 int string La_societe 0x7f0b0015
+int string Nord 0x7f0b0020
+int string Ouest 0x7f0b0021
+int string Sud 0x7f0b0023
 int string abc_action_bar_home_description 0x7f0b0001
 int string abc_action_bar_up_description 0x7f0b0002
 int string abc_action_menu_overflow_description 0x7f0b0003

@@ -17,9 +17,14 @@
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
-    <string name="numeroLigne">numero de ligne ( lapplication ne supporte que les ligne de 11-15)</string>
+    <string name="numeroLigne">numero de ligne (lapplication ne supporte que les ligne de 11-15)</string>
     <string name="title_activity_ligne">LigneActivity</string>
-	<string name="BtnTarif">Aller voir les arret</string>
-	<string name="Erreure">ERREURE</string>
-	<color name="black"> #000000</color>
+    <string name="BtnTarif">Aller voir les arret</string>
+    <string name="Nord">Nord</string>
+    <string name="Ouest">Ouest</string>
+    <string name="Est">Est</string>
+    <string name="Sud">Sud</string>
+     <string name="Erreure">Erreur</string>
+    <color name="black"> #000000</color>
+
 </resources>

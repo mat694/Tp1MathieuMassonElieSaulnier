@@ -1236,8 +1236,12 @@ containing a value of this type.
     }
     public static final class string {
         public static final int BtnTarif=0x7f0b001f;
-        public static final int Erreure=0x7f0b0020;
+        public static final int Erreure=0x7f0b0024;
+        public static final int Est=0x7f0b0022;
         public static final int La_societe=0x7f0b0015;
+        public static final int Nord=0x7f0b0020;
+        public static final int Ouest=0x7f0b0021;
+        public static final int Sud=0x7f0b0023;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abc_action_bar_home_description=0x7f0b0001;
