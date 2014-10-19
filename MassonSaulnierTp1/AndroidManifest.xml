@@ -26,6 +26,10 @@
             android:name=".LigneActivity"
             android:label="@string/title_activity_ligne" >
         </activity>
+        <activity
+            android:name=".RouteActivity"
+            android:label="@string/title_activity_route" >
+        </activity>
     </application>
 
 </manifest>

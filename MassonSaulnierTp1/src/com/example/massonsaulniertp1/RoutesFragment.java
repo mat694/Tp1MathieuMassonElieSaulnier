@@ -15,6 +15,8 @@ import multipleListView.listviewAdapter;
 import static multipleListView.Constant.NUMEROLIGNE_COLUMN;
 import static multipleListView.Constant.PREMIEREDIRECTION_COLUMN;
 import static multipleListView.Constant.DEUXIEMEDIRECTION_COLUMN;
+import static multipleListView.Constant.PREMIERIDCACHER;
+import static multipleListView.Constant.DEUXIEMEIDCACHER;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -131,6 +133,8 @@ public class RoutesFragment extends Fragment {
 		temp.put(NUMEROLIGNE_COLUMN, tst.getNumeroLigne());
 		temp.put(PREMIEREDIRECTION_COLUMN, tst.getDirection1());
 		temp.put(DEUXIEMEDIRECTION_COLUMN, tst.getDirection2());
+		temp.put(PREMIERIDCACHER, tst.getTripID1());
+		temp.put(DEUXIEMEIDCACHER, tst.getTripID2());
 
 		list.add(temp);
 	}

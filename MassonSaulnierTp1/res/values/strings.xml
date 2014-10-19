@@ -24,7 +24,10 @@
     <string name="Ouest">Ouest</string>
     <string name="Est">Est</string>
     <string name="Sud">Sud</string>
-     <string name="Erreure">Erreur</string>
+    <string name="Erreure">Erreur</string>
+
     <color name="black"> #000000</color>
+
+    <string name="title_activity_route">RouteActivity</string>
 
 </resources>
