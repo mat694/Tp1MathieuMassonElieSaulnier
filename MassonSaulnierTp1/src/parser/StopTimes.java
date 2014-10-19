@@ -1,5 +1,12 @@
 package parser;
 
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+import android.content.res.Resources;
+
+import com.example.massonsaulniertp1.R;
+
 public class StopTimes {
 
 	public String trip_id;
@@ -18,5 +25,9 @@ public class StopTimes {
 		this.stop_id = temp[3];
 		this.stop_sequence = temp[4];
 
+	}
+	public static ArrayList<StopTimes> trouverStopTimes(Resources r) {
+		InputStreamReader resourceDeStopTimes = new InputStreamReader(r.openRawResource(R.raw.stop_times));
+		return mainParser.parseStopTime(resourceDeStopTimes);
 	}
 }

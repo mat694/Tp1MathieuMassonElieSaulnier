@@ -23,6 +23,7 @@ public class LigneActivity extends ActionBarActivity {
 	ListView listeArret;
 	String numeroLigne;
 	double prix;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -35,35 +36,34 @@ public class LigneActivity extends ActionBarActivity {
 
 	private void setWidget() {
 		listeArret = (ListView) findViewById(R.id.ListeLigne);
-
 	}
 
 	private void populateListeArret() {
-		ArrayList<Trips> trip = trouverTrips();
+		ArrayList<Trips> trip = Trips.trouverTrips(this.getResources());
 		ArrayList<StopTimes> stopTime;
 		ArrayList<String> ListeDeTripID = new ArrayList<String>();
 		ArrayList<Stop> ListStop = new ArrayList<Stop>();
-		 prix = trouverFare();
+		prix = Fare.trouverFare(this.getResources(), numeroLigne);
 
-		ListeDeTripID =trouverListTripID(trip);
+		ListeDeTripID = trouverListTripID(trip);
 		trip = null;
 
-		
-		stopTime = trouverStopTimes();
-		ArrayList<StopTimes> listeDeStop = trouverListStopAvecID(stopTime,ListeDeTripID);
+		stopTime = StopTimes.trouverStopTimes(this.getResources());
+		ArrayList<StopTimes> listeDeStop = trouverListStopAvecID(stopTime,
+				ListeDeTripID);
 
 		stopTime = null;
 		ArrayList<String> listDArret = new ArrayList<String>();
-		ListStop = trouverStop();
+		ListStop = Stop.trouverStop(this.getResources());
 
-		listDArret = trouverStopNom(ListStop,listeDeStop);
+		listDArret = trouverStopNom(ListStop, listeDeStop);
 		Collections.sort(listDArret);
 		listDArret = retirerVirgule(listDArret);
 		setAdapter(listDArret);
 	}
-	
-	private ArrayList<String> trouverStopNom(ArrayList<Stop> ListStop, ArrayList<StopTimes> ListeDeStop)
-	{
+
+	private ArrayList<String> trouverStopNom(ArrayList<Stop> ListStop,
+			ArrayList<StopTimes> ListeDeStop) {
 		ArrayList<String> listDArret = new ArrayList<String>();
 		for (Stop stop : ListStop) {
 			for (StopTimes stopID : ListeDeStop) {
@@ -80,8 +80,9 @@ public class LigneActivity extends ActionBarActivity {
 		return listDArret;
 	}
 
-	private ArrayList<StopTimes> trouverListStopAvecID(ArrayList<StopTimes> stopTime,ArrayList<String> ListeDeTripID){
-		ArrayList<StopTimes>  listeDeStop = new ArrayList<StopTimes>();
+	private ArrayList<StopTimes> trouverListStopAvecID(
+			ArrayList<StopTimes> stopTime, ArrayList<String> ListeDeTripID) {
+		ArrayList<StopTimes> listeDeStop = new ArrayList<StopTimes>();
 		for (StopTimes stopT : stopTime) {
 			for (String tripID : ListeDeTripID) {
 
@@ -90,11 +91,11 @@ public class LigneActivity extends ActionBarActivity {
 			}
 		}
 		return listeDeStop;
-		
+
 	}
-	
-	private ArrayList<String> trouverListTripID(ArrayList<Trips> listTrip){
-		ArrayList<String>  ListeDeTripID = new ArrayList<String>();
+
+	private ArrayList<String> trouverListTripID(ArrayList<Trips> listTrip) {
+		ArrayList<String> ListeDeTripID = new ArrayList<String>();
 		for (Trips t : listTrip) {
 			if (t.route_id.equals(numeroLigne))
 				ListeDeTripID.add(t.trip_id);
@@ -102,8 +103,9 @@ public class LigneActivity extends ActionBarActivity {
 				break;
 		}
 		return ListeDeTripID;
-		
+
 	}
+
 	private ArrayList<String> retirerVirgule(ArrayList<String> listeDeString) {
 		String[] temp;
 		for (int i = 0; i < listeDeString.size(); i++) {
@@ -118,31 +120,6 @@ public class LigneActivity extends ActionBarActivity {
 				android.R.layout.simple_list_item_1, listeDeString);
 		listeArret.setAdapter(arrayAdapter);
 
-	}
-
-	private double trouverFare() {
-		InputStreamReader resourceDeFare = new InputStreamReader(this
-				.getResources().openRawResource(R.raw.fare_attributes));
-		return mainParser.parseFare(Integer.parseInt(numeroLigne),
-				resourceDeFare);
-	}
-
-	private ArrayList<Stop> trouverStop() {
-		InputStreamReader resourceDeStop = new InputStreamReader(this
-				.getResources().openRawResource(R.raw.stops));
-		return mainParser.parseStop(resourceDeStop);
-	}
-
-	private ArrayList<StopTimes> trouverStopTimes() {
-		InputStreamReader resourceDeStopTimes = new InputStreamReader(this
-				.getResources().openRawResource(R.raw.stop_times));
-		return mainParser.parseStopTime(resourceDeStopTimes);
-	}
-
-	private ArrayList<Trips> trouverTrips() {
-		InputStreamReader resourceDeTrips = new InputStreamReader(this
-				.getResources().openRawResource(R.raw.trips));
-		return mainParser.parseTrips(resourceDeTrips);
 	}
 
 	@Override
