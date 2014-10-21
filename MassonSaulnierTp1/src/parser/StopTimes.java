@@ -27,9 +27,23 @@ public class StopTimes {
 
 	}
 	
-
+	
 	public static ArrayList<StopTimes> trouverStopTimes(Resources r) {
 		InputStreamReader resourceDeStopTimes = new InputStreamReader(r.openRawResource(R.raw.stop_times));
 		return mainParser.parseStopTime(resourceDeStopTimes);
 	}
+	
+	
+	@Override
+	  public boolean equals(Object o) {
+        if (o instanceof Stop) {
+        	return this.stop_id.equals(((Stop)o).stop_id);
+        }
+        return false;
+    }
+	   @Override
+	    public int hashCode(){
+	        return 1;
+	    }
 }
+

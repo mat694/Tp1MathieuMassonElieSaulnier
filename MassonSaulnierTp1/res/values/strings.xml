@@ -29,5 +29,11 @@
     <color name="black"> #000000</color>
 
     <string name="title_activity_route">RouteActivity</string>
+    <string name="title_activity_temps">TempsActivity</string>
+    <string name="General">Général</string>
+    <string name="HeureFixe">Heure Fixe</string>
+    <string name="ChercherArret">Chercher un Arret</string>
+    <string name="title_activity_temps_choix">TempsChoixActivity</string>
+    <string name="title_activity_heures3">Heures3Activity</string>
 
 </resources>

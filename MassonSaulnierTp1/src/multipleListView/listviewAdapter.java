@@ -74,10 +74,10 @@ public class listviewAdapter extends BaseAdapter {
 			holder = new ViewHolder();
 			holder.NumeroLigne = (TextView) convertView
 					.findViewById(R.id.NumeroLigne);
-			holder.PremierDirection = (Button) convertView
+			holder.PremierDirection = (TextView) convertView
 					.findViewById(R.id.PremierDirection);
 
-			holder.DeuxiemeDirection = (Button) convertView
+			holder.DeuxiemeDirection = (TextView) convertView
 					.findViewById(R.id.DeuxiemeDirection);
 
 			convertView.setTag(holder);

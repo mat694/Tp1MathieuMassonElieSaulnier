@@ -8,13 +8,54 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.massonsaulniertp1.RouteActivity" >
 
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioBGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/General" />
+
+        <RadioButton
+            android:id="@+id/radioBHeureFix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HeureFixe" />
+    </RadioGroup>
+
     <ListView
         android:id="@+id/listViewRoute"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp" >
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp" >
     </ListView>
+
+    <EditText
+        android:id="@+id/NumeroArret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/listViewRoute"
+        android:layout_below="@+id/radioGroup1"
+        android:ems="10" 
+        android:visibility="invisible" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/BtnChercher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listViewRoute"
+        android:layout_alignParentRight="true"
+        android:text="@string/ChercherArret" 
+        android:visibility="invisible" />
 
 </RelativeLayout>

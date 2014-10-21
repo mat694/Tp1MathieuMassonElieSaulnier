@@ -77,6 +77,7 @@ public class RoutesFragment extends Fragment {
 						- Integer.parseInt(t2.route_id);
 			}
 		});
+		
 		listeDesTripsStopTime = peuplerListePourAdapter(listeDeTrips, rootView);
 	}
 

@@ -2314,7 +2314,6 @@
 1602994,54747,Henri-Bourassa / Renaude-Lapointe,45.613730,-73.599380,http://m.stm.info/fr/horaires/arrets/54747/bus,0
 1802302,55339,Henri-Bourassa / Langelier,45.610680,-73.608210,http://m.stm.info/fr/horaires/arrets/55339/bus,0
 3601004,58218,Gouin / d'Orléans,45.507122,-73.772262,http://m.stm.info/fr/horaires/arrets/58218/bus,1
-1,10280,Station Henri-Bourassa,45.556110,-73.667451,http://www.stm.info/metro/M01.htm,0
 107536,51065,Station Acadie (Jean-Talon / de l'Acadie),45.524424,-73.626269,http://m.stm.info/fr/horaires/arrets/51065/bus,0
 107553,51068,Saint-Laurent / Villeray,45.537077,-73.625401,http://m.stm.info/fr/horaires/arrets/51068/bus,1
 105764,50745,Van Horne / Westbury,45.491185,-73.640483,http://m.stm.info/fr/horaires/arrets/50745/bus,1
@@ -2484,28 +2483,6 @@
 101260,50106,Saint-Joseph Est / No 3500,45.552162,-73.566023,http://m.stm.info/fr/horaires/arrets/50106/bus,1
 1910375,61110,Lucien-Thimens / Alexis-Nihon,45.508899,-73.695757,http://m.stm.info/fr/horaires/arrets/61110/bus,1
 101313,50108,Viau / centre sportif Pierre-Charbonneau,45.563612,-73.549525,http://m.stm.info/fr/horaires/arrets/50108/bus,1
-35,10134,Station Atwater,45.489345,-73.584202,http://www.stm.info/metro/M35.htm,0
-38,10128,Station LaSalle,45.470736,-73.566135,http://www.stm.info/metro/M38.htm,0
-39,10126,Station De l'Église,45.461818,-73.567216,http://www.stm.info/metro/M39.htm,0
-40,10124,Station Verdun,45.459222,-73.571833,http://www.stm.info/metro/M40.htm,0
-41,10122,Station Jolicoeur,45.456787,-73.582115,http://www.stm.info/metro/M41.htm,0
-42,10120,Station Monk,45.451007,-73.593380,http://www.stm.info/metro/M42.htm,0
-43,10118,Station Angrignon,45.446294,-73.603752,http://www.stm.info/metro/M43.htm,0
-45,10452,Station Jean-Drapeau,45.512289,-73.533371,http://www.stm.info/metro/M45.htm,0
-46,10244,Station Place-Saint-Henri,45.477202,-73.586626,http://www.stm.info/metro/M46.htm,0
-47,10242,Station Vendôme,45.473986,-73.604022,http://www.stm.info/metro/M47.htm,0
-48,10238,Station Villa-Maria,45.479501,-73.619884,http://www.stm.info/metro/M48.htm,0
-8,10266,Station Laurier,45.527042,-73.586242,http://www.stm.info/metro/M08.htm,0
-9,10264,Station Mont-Royal,45.524561,-73.581776,http://www.stm.info/metro/M09.htm,0
-11,10146,Station Berri-UQAM,45.514851,-73.559654,http://www.stm.info/metro/M11.htm,0
-12,10258,Station Champ-de-Mars,45.510190,-73.556335,http://www.stm.info/metro/M12.htm,0
-13,10256,Station Place-d'Armes,45.506124,-73.559699,http://www.stm.info/metro/M13.htm,0
-15,10252,Station Bonaventure,45.498046,-73.566892,http://www.stm.info/metro/M15.htm,0
-16,10250,Station Lucien-L'Allier,45.494944,-73.571089,http://www.stm.info/metro/M16.htm,0
-17,10248,Station Georges-Vanier,45.488962,-73.576435,http://www.stm.info/metro/M17.htm,0
-18,10170,Station Honoré-Beaugrand,45.596865,-73.534486,http://www.stm.info/metro/M18.htm,0
-19,10168,Station Radisson,45.589306,-73.539571,http://www.stm.info/metro/M19.htm,0
-20,10166,Station Langelier,45.582963,-73.542720,http://www.stm.info/metro/M20.htm,0
 103773,50392,Saint-Laurent / Sauvé,45.546954,-73.660089,http://m.stm.info/fr/horaires/arrets/50392/bus,1
 103783,50394,Berri / Sauriol,45.551727,-73.659457,http://m.stm.info/fr/horaires/arrets/50394/bus,1
 103854,50407,Fleury / Chambord,45.559601,-73.658220,http://m.stm.info/fr/horaires/arrets/50407/bus,1
@@ -2514,29 +2491,6 @@
 103902,50417,Fleury / Christophe-Colomb,45.561291,-73.657410,http://m.stm.info/fr/horaires/arrets/50417/bus,1
 103904,50419,Fleury / Christophe-Colomb,45.560949,-73.657433,http://m.stm.info/fr/horaires/arrets/50419/bus,1
 103768,50389,De Saint-Firmin / Gouin,45.573534,-73.658647,http://m.stm.info/fr/horaires/arrets/50389/bus,1
-49,10236,Station Snowdon,45.485432,-73.627937,http://www.stm.info/metro/M49.htm,0
-52,10230,Station Namur,45.494970,-73.653108,http://www.stm.info/metro/M52.htm,0
-53,10228,Station De la Savane,45.500345,-73.661790,http://www.stm.info/metro/M53.htm,0
-54,10224,Station Du Collège,45.509446,-73.674781,http://www.stm.info/metro/M54.htm,0
-56,10536,Station Université-de-Montréal,45.503410,-73.617822,http://www.stm.info/metro/M56.htm,0
-58,10540,Station Outremont,45.520103,-73.615099,http://www.stm.info/metro/M58.htm,0
-59,10542,Station Acadie,45.523487,-73.623727,http://www.stm.info/metro/M59.htm,0
-60,10544,Station Parc,45.530223,-73.623932,http://www.stm.info/metro/M60.htm,0
-61,10546,Station De Castelnau,45.535240,-73.619896,http://www.stm.info/metro/M61.htm,0
-62,10552,Station Fabre,45.547917,-73.607409,http://www.stm.info/metro/M62.htm,0
-21,10164,Station Cadillac,45.577005,-73.546360,http://www.stm.info/metro/M21.htm,0
-22,10162,Station Assomption,45.569230,-73.546788,http://www.stm.info/metro/M22.htm,0
-23,10160,Station Viau,45.560894,-73.547215,http://www.stm.info/metro/M23.htm,0
-24,10158,Station Pie-IX,45.553901,-73.551847,http://www.stm.info/metro/M24.htm,0
-25,10156,Station Joliette,45.546963,-73.551508,http://www.stm.info/metro/M25.htm,0
-26,10154,Station Préfontaine,45.541529,-73.554412,http://www.stm.info/metro/M26.htm,0
-28,10150,Station Papineau,45.523643,-73.551971,http://www.stm.info/metro/M28.htm,0
-29,10148,Station Beaudry,45.518977,-73.555850,http://www.stm.info/metro/M29.htm,0
-30,10144,Station Saint-Laurent,45.510773,-73.564899,http://www.stm.info/metro/M30.htm,0
-31,10142,Station Place-des-Arts,45.508211,-73.568122,http://www.stm.info/metro/M31.htm,0
-32,10140,Station McGill,45.504117,-73.571310,http://www.stm.info/metro/M32.htm,0
-33,10138,Station Peel,45.500890,-73.574971,http://www.stm.info/metro/M33.htm,0
-34,10136,Station Guy-Concordia,45.495678,-73.579056,http://www.stm.info/metro/M34.htm,0
 102584,50165,Gouin / Saint-Évariste,45.535370,-73.714835,http://m.stm.info/fr/horaires/arrets/50165/bus,1
 102573,50163,Lachapelle / Périnault,45.527492,-73.716083,http://m.stm.info/fr/horaires/arrets/50163/bus,1
 102604,50169,Gouin / O'Brien,45.536314,-73.713642,http://m.stm.info/fr/horaires/arrets/50169/bus,1
@@ -2666,9 +2620,6 @@
 2001684,56150,Brittany / Laird,45.524977,-73.650446,http://m.stm.info/fr/horaires/arrets/56150/bus,1
 2901892,57286,Remembrance / 32e Avenue,45.437679,-73.690537,http://m.stm.info/fr/horaires/arrets/57286/bus,1
 115468,52323,du Parc-La-Fontaine / Rachel,45.525430,-73.574295,http://m.stm.info/fr/horaires/arrets/52323/bus,1
-63,10554,Station D'Iberville,45.553781,-73.602102,http://www.stm.info/metro/M63.htm,0
-64,10556,Station Saint-Michel,45.559798,-73.600077,http://www.stm.info/metro/M64.htm,0
-65,10222,Station Côte-Vertu,45.514233,-73.683063,http://www.stm.info/metro/M65.htm,0
 3003050,57588,Côte-Vertu / Garderie Canadair,45.478483,-73.7276,http://m.stm.info/fr/horaires/arrets/57588/bus,1
 3003072,57591,Côte-Vertu / Pitfield,45.482560,-73.722999,http://m.stm.info/fr/horaires/arrets/57591/bus,1
 109207,51341,Jarry / 2e Avenue,45.560526,-73.612612,http://m.stm.info/fr/horaires/arrets/51341/bus,1
@@ -2681,10 +2632,6 @@
 1701447,54982,Métropolitaine / Langelier,45.593945,-73.578751,http://m.stm.info/fr/horaires/arrets/54982/bus,0
 1800511,55102,Pie-IX / Monselet,45.590149,-73.636343,http://m.stm.info/fr/horaires/arrets/55102/bus,0
 1800814,55164,d'Amiens / Armand-Lavergne,45.591573,-73.630810,http://m.stm.info/fr/horaires/arrets/55164/bus,1
-2,10278,Station Sauvé,45.550714,-73.656462,http://www.stm.info/metro/M02.htm,0
-3,10276,Station Crémazie,45.545990,-73.638758,http://www.stm.info/metro/M03.htm,0
-6,10270,Station Beaubien,45.535584,-73.604507,http://www.stm.info/metro/M06.htm,0
-7,10268,Station Rosemont,45.531243,-73.597844,http://www.stm.info/metro/M07.htm,0
 3900476,58533,Lee / Clark-Graham,45.427514,-73.902287,http://m.stm.info/fr/horaires/arrets/58533/bus,0
 3900626,58550,Lee / Clark-Graham,45.427230,-73.902157,http://m.stm.info/fr/horaires/arrets/58550/bus,0
 103848,50405,Meilleur / de Louvain,45.538347,-73.658126,http://m.stm.info/fr/horaires/arrets/50405/bus,1
@@ -7285,9 +7232,6 @@
 141378,50743,Elmhurst / Sherbrooke,45.454677,-73.640676,http://m.stm.info/fr/horaires/arrets/50743/bus,0
 3900700,60673,Clark-Graham / No 19700,45.4232,-73.913505,http://m.stm.info/fr/horaires/arrets/60673/bus,0
 3900710,60674,Clark-Graham / No 19701,45.423156,-73.913638,http://m.stm.info/fr/horaires/arrets/60674/bus,0
-66,10282,Station Cartier,45.560398,-73.681718,http://www.stm.info/metro/M66.htm,0
-67,10286,Station De la Concorde,45.560504,-73.709596,http://www.stm.info/metro/M67.htm,0
-68,10288,Station Montmorency,45.558327,-73.721814,http://www.stm.info/metro/M68.htm,0
 127906,53849,Louis-Hippolyte-La Fontaine / Chénier,45.596208,-73.545864,http://m.stm.info/fr/horaires/arrets/53849/bus,0
 128022,53863,Forbes / Saint-Évariste,45.533498,-73.7113,http://m.stm.info/fr/horaires/arrets/53863/bus,1
 128119,53873,Dickson / No 1505,45.566408,-73.527606,http://m.stm.info/fr/horaires/arrets/53873/bus,1
@@ -7782,7 +7726,6 @@
 125949,53746,Remembrance / Lac des Castors Est,45.500401,-73.599840,http://m.stm.info/fr/horaires/arrets/53746/bus,0
 126514,53766,Gouin / Wood,45.511506,-73.7517,http://m.stm.info/fr/horaires/arrets/53766/bus,0
 3102952,60234,Sedgefield / Stillview,45.449565,-73.831692,http://m.stm.info/fr/horaires/arrets/60234/bus,1
-5,10272,Station Jean-Talon,45.5387,-73.613910,http://www.stm.info/metro/M05.htm,0
 139459,60236,Station Radisson (Sherbrooke / Des Groseilliers),45.589372,-73.539430,http://m.stm.info/fr/horaires/arrets/60236/bus,0
 2200732,60238,Station Atwater (Tupper / Atwater),45.489111,-73.583421,http://m.stm.info/fr/horaires/arrets/60238/bus,0
 139466,60239,Lajeunesse / Jarry,45.543951,-73.629117,http://m.stm.info/fr/horaires/arrets/60239/bus,0
@@ -7901,12 +7844,6 @@
 1901972,55365,Transcanadienne / Halpern,45.491109,-73.750161,http://m.stm.info/fr/horaires/arrets/55365/bus,0
 3400290,58066,de l'Église / Centre Culturel,45.488317,-73.881283,http://m.stm.info/fr/horaires/arrets/58066/bus,0
 3700646,58401,Jean-Yves / Transcanadienne,45.440461,-73.886026,http://m.stm.info/fr/horaires/arrets/58401/bus,0
-4,10274,Station Jarry,45.543308,-73.628530,http://www.stm.info/metro/M04.htm,0
-14,10254,Station Square-Victoria-OACI,45.501560,-73.563647,http://www.stm.info/metro/M14.htm,0
-27,10152,Station Frontenac,45.533090,-73.552325,http://www.stm.info/metro/M27.htm,0
-37,10130,Station Charlevoix,45.478318,-73.569349,http://www.stm.info/metro/M37.htm,0
-44,10454,Station Longueuil-Université de Sherbrooke,45.525191,-73.521961,http://www.stm.info/metro/M44.htm,0
-51,10232,Station Plamondon,45.494353,-73.637888,http://www.stm.info/metro/M51.htm,0
 100370,50103,Saint-Jacques / No 6710,45.458952,-73.626956,http://m.stm.info/fr/horaires/arrets/50103/bus,0
 101401,50112,du Parc / Prince-Arthur,45.510432,-73.575530,http://m.stm.info/fr/horaires/arrets/50112/bus,1
 136834,54286,6e Rue / 70e Avenue,45.654496,-73.554536,http://m.stm.info/fr/horaires/arrets/54286/bus,0
@@ -9288,10 +9225,6 @@
 2200744,61322,Sherbrooke / Côte-Saint-Antoine,45.486637,-73.594543,http://m.stm.info/fr/horaires/arrets/61322/bus,0
 2702960,61320,de Verdun / No 5969,45.447849,-73.572792,http://m.stm.info/fr/horaires/arrets/61320/bus,1
 3602624,61321,Pierrefonds / Winnie-Wakefield,45.458802,-73.894322,http://m.stm.info/fr/horaires/arrets/61321/bus,0
-10,10262,Station Sherbrooke,45.518345,-73.568251,http://www.stm.info/metro/M10.htm,0
-36,10132,Station Lionel-Groulx,45.482880,-73.579611,http://www.stm.info/metro/M36.htm,0
-50,10234,Station Côte-Sainte-Catherine,45.492459,-73.632806,http://www.stm.info/metro/M50.htm,0
-55,10534,Station Côte-des-Neiges,45.496306,-73.622534,http://www.stm.info/metro/M55.htm,0
 2903536,61382,Norman / Claire,45.448316,-73.679603,http://m.stm.info/fr/horaires/arrets/61382/bus,0
 1910140,60855,Thimens / No 2650,45.504572,-73.703192,http://m.stm.info/fr/horaires/arrets/60855/bus,1
 3003389,60864,Aéroport international Montréal-Trudeau,45.456847,-73.751630,http://m.stm.info/fr/horaires/arrets/60864/bus,0
@@ -9344,7 +9277,6 @@
 144324,61224,Claude-Masson / Anne-Courtemanche,45.613235,-73.537751,http://m.stm.info/fr/horaires/arrets/61224/bus,1
 144333,61225,De Contrecoeur / Rousseau,45.613686,-73.536316,http://m.stm.info/fr/horaires/arrets/61225/bus,0
 144348,61226,De Contrecoeur / Jean-Pierre-Ronfard,45.613382,-73.534458,http://m.stm.info/fr/horaires/arrets/61226/bus,0
-57,10538,Station Édouard-Montpetit,45.510089,-73.612624,http://www.stm.info/metro/M57.htm,0
 102693,50184,Grenet / de Louisbourg,45.525702,-73.709993,http://m.stm.info/fr/horaires/arrets/50184/bus,1
 109953,51452,Station Fabre (Papineau / Jean-Talon),45.547941,-73.607299,http://m.stm.info/fr/horaires/arrets/51452/bus,1
 139713,60305,Rodolphe-Forget / Louis-Dessaulles,45.646189,-73.5758,http://m.stm.info/fr/horaires/arrets/60305/bus,1

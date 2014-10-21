@@ -33,4 +33,16 @@ public class Stop {
 		InputStreamReader resourceDeStop = new InputStreamReader(r.openRawResource(R.raw.stops));
 		return mainParser.parseStop(resourceDeStop);
 	}
+	
+	@Override
+    public boolean equals(Object o) {
+        if (o instanceof Stop) {
+        	return this.stop_id.equals(((Stop)o).stop_id);
+        }
+        return false;
+    }
+	   @Override
+	    public int hashCode(){
+	        return 1;
+	    }
 }

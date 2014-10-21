@@ -30,6 +30,18 @@
             android:name=".RouteActivity"
             android:label="@string/title_activity_route" >
         </activity>
+        <activity
+            android:name=".TempsActivity"
+            android:label="@string/title_activity_temps" >
+        </activity>
+        <activity
+            android:name=".TempsChoixActivity"
+            android:label="@string/title_activity_temps_choix" >
+        </activity>
+        <activity
+            android:name=".Heures3Activity"
+            android:label="@string/title_activity_heures3" >
+        </activity>
     </application>
 
 </manifest>
